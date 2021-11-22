@@ -10,6 +10,7 @@ import { MyListingsPageComponent } from './my-listings-page/my-listings-page.com
 import { NewListingPageComponent } from './new-listing-page/new-listing-page.component';
 import { EditListingPageComponent } from './edit-listing-page/edit-listing-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,10 +23,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     EditListingPageComponent,
     PageNotFoundComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
